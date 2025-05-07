@@ -33,7 +33,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/ba777cb2-8a91-47ec-b3a1-3d1e3d1889d3.png" 
                 alt="Shilling Strategy Consulting Logo" 
-                className="h-8 md:h-10"
+                className="h-12 md:h-16 w-auto object-contain max-w-[200px] md:max-w-[240px]"
               />
             </a>
           </div>
