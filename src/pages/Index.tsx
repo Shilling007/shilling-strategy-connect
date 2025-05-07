@@ -1,12 +1,12 @@
 
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import FounderSection from "@/components/FounderSection";
-import IndustriesSection from "@/components/IndustriesSection";
-import ServicesSection from "@/components/ServicesSection";
-import OffersSection from "@/components/OffersSection";
-import ContactSection from "@/components/ContactSection";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import FounderSection from "../components/FounderSection";
+import IndustriesSection from "../components/IndustriesSection";
+import ServicesSection from "../components/ServicesSection";
+import OffersSection from "../components/OffersSection";
+import ContactSection from "../components/ContactSection";
 
 const Index = () => {
   return (
