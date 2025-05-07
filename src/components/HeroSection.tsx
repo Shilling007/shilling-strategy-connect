@@ -1,10 +1,7 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-white to-lightblue">
+  return <section className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-white to-lightblue">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3')] bg-cover bg-center opacity-5"></div>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -15,25 +12,18 @@ const HeroSection = () => {
               <span className="text-3xl md:text-4xl font-semibold text-navy">Stand for the Growth</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Empowering startups and small businesses in Chennai with strategic consulting, branding solutions, and growth-focused marketing services.
-            </p>
+            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Empowering startups and small businesses with strategic consulting, branding solutions, and growth-focused marketing services.</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button 
-                size="lg" 
-                className="bg-navy hover:bg-navy/90 text-white px-8 py-6 text-lg font-medium"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
-              >
+              <Button size="lg" className="bg-navy hover:bg-navy/90 text-white px-8 py-6 text-lg font-medium" onClick={() => document.getElementById('contact')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Book a Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              <Button 
-                variant="outline"
-                size="lg" 
-                className="border-navy text-navy hover:bg-navy/5 px-8 py-6 text-lg font-medium"
-                onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})}
-              >
+              <Button variant="outline" size="lg" className="border-navy text-navy hover:bg-navy/5 px-8 py-6 text-lg font-medium" onClick={() => document.getElementById('services')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Explore Our Services
               </Button>
             </div>
@@ -49,8 +39,6 @@ const HeroSection = () => {
           </svg>
         </a>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
