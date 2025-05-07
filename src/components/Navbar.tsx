@@ -30,9 +30,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
-              <span className="text-navy font-heading font-bold text-xl md:text-2xl">
-                Shilling Strategy
-              </span>
+              <img 
+                src="/lovable-uploads/ba777cb2-8a91-47ec-b3a1-3d1e3d1889d3.png" 
+                alt="Shilling Strategy Consulting Logo" 
+                className="h-8 md:h-10"
+              />
             </a>
           </div>
           
