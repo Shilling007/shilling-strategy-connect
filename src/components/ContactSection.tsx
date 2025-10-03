@@ -96,8 +96,8 @@ const ContactSection = () => {
                   <h4 className="font-medium text-navy mb-4">Connect with us</h4>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://wa.me/+919003748116" 
-                      target="_blank" 
+                      href="http://wa.me/+919003748116" 
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
                     >
