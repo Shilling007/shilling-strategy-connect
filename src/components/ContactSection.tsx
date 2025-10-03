@@ -116,8 +116,8 @@ const ContactSection = () => {
                       </svg>
                     </a>
                     <a 
-                      href="https://www.instagram.com/shillingstrategyconsulting" 
-                      target="_blank" 
+                      href="https://www.instagram.com/shilling_official?igsh=a3ZrdnoxYzBya2Vu" 
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#E1306C] text-white p-2 rounded-full hover:bg-[#E1306C]/80 transition-colors"
                     >
