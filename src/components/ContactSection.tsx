@@ -96,7 +96,7 @@ const ContactSection = () => {
                   <h4 className="font-medium text-navy mb-4">Connect with us</h4>
                   <div className="flex space-x-4">
                     <a 
-                      href="http://wa.me/+919003748116" 
+                      href="https://wa.me/919003748116" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
@@ -116,7 +116,7 @@ const ContactSection = () => {
                       </svg>
                     </a>
                     <a 
-                      href="https://www.instagram.com/shilling_official?igsh=a3ZrdnoxYzBya2Vu" 
+                      href="https://www.instagram.com/shilling_official/" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#E1306C] text-white p-2 rounded-full hover:bg-[#E1306C]/80 transition-colors"
