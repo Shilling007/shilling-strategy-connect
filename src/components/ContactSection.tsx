@@ -106,8 +106,8 @@ const ContactSection = () => {
                       </svg>
                     </a>
                     <a 
-                      href="https://www.linkedin.com/company/shilling-strategy" 
-                      target="_blank" 
+                      href="https://www.linkedin.com/company/shilling-strategy-consulting-ssc/" 
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#0077B5] text-white p-2 rounded-full hover:bg-[#0077B5]/80 transition-colors"
                     >
