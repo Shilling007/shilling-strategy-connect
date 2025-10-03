@@ -76,7 +76,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-navy">Phone Number</h4>
-                    <p className="text-gray-600">+91-XXXXXXXXXX</p>
+                    <p className="text-gray-600">+91-9003748116</p>
                     <p className="text-sm text-gray-500 mt-1">Mon-Fri, 9:00 AM - 6:00 PM</p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const ContactSection = () => {
                   <h4 className="font-medium text-navy mb-4">Connect with us</h4>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://wa.me/+919XXXXXXXXX" 
+                      href="https://wa.me/+919003748116" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors"
