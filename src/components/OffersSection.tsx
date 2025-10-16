@@ -58,48 +58,48 @@ const OffersSection = () => {
 
   return (
     <section id="offers" className="section-padding bg-navy text-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3">Special Service Packages</h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">Special Service Packages</h2>
+          <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto px-4">
             Comprehensive solutions tailored for different business stages and budgets, 
             designed to give you maximum value.
           </p>
           <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {offers.map((offer, index) => (
             <div 
               key={index} 
-              className={`rounded-lg p-6 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-2 ${
+              className={`rounded-lg p-5 sm:p-6 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-2 ${
                 offer.popular 
                   ? "bg-gradient-to-br from-gold to-amber-500 text-navy shadow-xl" 
                   : "bg-white/10 backdrop-blur-lg border border-white/20"
               }`}
             >
               {offer.popular && (
-                <div className="absolute top-4 right-4">
-                  <span className="bg-navy text-gold px-3 py-1 rounded-full text-xs font-semibold">
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+                  <span className="bg-navy text-gold px-2 sm:px-3 py-1 rounded-full text-xs font-semibold">
                     Most Popular
                   </span>
                 </div>
               )}
               
-              <h3 className={`text-2xl font-bold mb-2 ${offer.popular ? "text-navy" : "text-white"}`}>
+              <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${offer.popular ? "text-navy" : "text-white"}`}>
                 {offer.name}
               </h3>
               
               <div className="mb-4">
-                <span className={`text-3xl font-bold ${offer.popular ? "text-navy" : "text-gold"}`}>
+                <span className={`text-2xl sm:text-3xl font-bold ${offer.popular ? "text-navy" : "text-gold"}`}>
                   {offer.price}
                 </span>
-                <span className={`text-sm ${offer.popular ? "text-navy/80" : "text-gray-300"}`}>
+                <span className={`text-xs sm:text-sm ${offer.popular ? "text-navy/80" : "text-gray-300"}`}>
                   {" "}/ one-time
                 </span>
               </div>
               
-              <ul className={`mb-8 space-y-3 ${offer.popular ? "text-navy/90" : "text-gray-300"}`}>
+              <ul className={`mb-6 sm:mb-8 space-y-2 sm:space-y-3 text-sm sm:text-base ${offer.popular ? "text-navy/90" : "text-gray-300"}`}>
                 {offer.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
                     <svg
@@ -130,13 +130,13 @@ const OffersSection = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-gray-300 mb-4">
+        <div className="text-center mt-8 sm:mt-12 px-4">
+          <p className="text-sm sm:text-base text-gray-300 mb-4">
             Need a customized solution? We can create a tailored package for your specific needs.
           </p>
           <Button 
             variant="outline" 
-            className="border-gold text-gold hover:bg-gold/10"
+            className="border-gold text-gold hover:bg-gold/10 w-full sm:w-auto"
             onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
           >
             Request Custom Package

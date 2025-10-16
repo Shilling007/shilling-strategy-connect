@@ -45,47 +45,47 @@ const ContactSection = () => {
     });
   };
   return <section id="contact" className="section-padding bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-navy mb-3">Get In Touch</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-2 sm:mb-3">Get In Touch</h2>
+          <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-4">
             Have questions or ready to start your business transformation? 
             Reach out to us and we'll get back to you promptly.
           </p>
           <div className="w-20 h-1 bg-gold mx-auto mt-4"></div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           <div className="lg:col-span-1">
-            <Card className="p-6 h-full bg-lightblue border-0">
-              <h3 className="text-2xl font-semibold text-navy mb-6">Contact Information</h3>
+            <Card className="p-4 sm:p-6 h-full bg-lightblue border-0">
+              <h3 className="text-xl sm:text-2xl font-semibold text-navy mb-4 sm:mb-6">Contact Information</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-white p-2 rounded-full mr-4">
-                    <Phone className="text-navy" size={20} />
+                  <div className="bg-white p-2 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                    <Phone className="text-navy" size={18} />
                   </div>
                   <div>
-                    <h4 className="font-medium text-navy">Phone Number</h4>
-                    <p className="text-gray-600">+91-9003748116</p>
-                    <p className="text-sm text-gray-500 mt-1">Mon-Fri, 9:00 AM - 6:00 PM</p>
+                    <h4 className="font-medium text-navy text-sm sm:text-base">Phone Number</h4>
+                    <p className="text-gray-600 text-sm sm:text-base">+91-9003748116</p>
+                    <p className="text-xs sm:text-sm text-gray-500 mt-1">Mon-Fri, 9:00 AM - 6:00 PM</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-white p-2 rounded-full mr-4">
-                    <Mail className="text-navy" size={20} />
+                  <div className="bg-white p-2 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                    <Mail className="text-navy" size={18} />
                   </div>
                   <div>
-                    <h4 className="font-medium text-navy">Email</h4>
-                    <p className="text-gray-600">ssc.shilling@gmail.com</p>
-                    <p className="text-sm text-gray-500 mt-1">We respond within 24-48 hours</p>
+                    <h4 className="font-medium text-navy text-sm sm:text-base">Email</h4>
+                    <p className="text-gray-600 text-sm sm:text-base break-all">ssc.shilling@gmail.com</p>
+                    <p className="text-xs sm:text-sm text-gray-500 mt-1">We respond within 24-48 hours</p>
                   </div>
                 </div>
                 
-                <div className="pt-6">
-                  <h4 className="font-medium text-navy mb-4">Connect with us</h4>
-                  <div className="flex space-x-4">
+                <div className="pt-4 sm:pt-6">
+                  <h4 className="font-medium text-navy mb-3 sm:mb-4 text-sm sm:text-base">Connect with us</h4>
+                  <div className="flex space-x-3 sm:space-x-4">
                     <a href="https://wa.me/919003748116" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition-colors">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
@@ -108,39 +108,39 @@ const ContactSection = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <Card className="p-6 border border-gray-200">
-              <h3 className="text-2xl font-semibold text-navy mb-6">Send us a Message</h3>
+            <Card className="p-4 sm:p-6 border border-gray-200">
+              <h3 className="text-xl sm:text-2xl font-semibold text-navy mb-4 sm:mb-6">Send us a Message</h3>
               
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700">Your Name</label>
+              <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
+                <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2">
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label htmlFor="name" className="text-xs sm:text-sm font-medium text-gray-700">Your Name</label>
                     <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} required />
                   </div>
                   
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <label htmlFor="email" className="text-xs sm:text-sm font-medium text-gray-700">Email Address</label>
                     <Input id="email" name="email" type="email" placeholder="john@example.com" value={formData.email} onChange={handleChange} required />
                   </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <label htmlFor="service" className="text-sm font-medium text-gray-700">Service Interested In</label>
-                  <select id="service" name="service" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy" value={formData.service} onChange={handleChange}>
+                <div className="space-y-1.5 sm:space-y-2">
+                  <label htmlFor="service" className="text-xs sm:text-sm font-medium text-gray-700">Service Interested In</label>
+                  <select id="service" name="service" className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy" value={formData.service} onChange={handleChange}>
                     {services.map((service, index) => <option key={index} value={service}>{service}</option>)}
                   </select>
                 </div>
                 
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">Your Message</label>
-                  <Textarea id="message" name="message" placeholder="Tell us about your business and how we can help..." value={formData.message} onChange={handleChange} rows={5} required />
+                <div className="space-y-1.5 sm:space-y-2">
+                  <label htmlFor="message" className="text-xs sm:text-sm font-medium text-gray-700">Your Message</label>
+                  <Textarea id="message" name="message" placeholder="Tell us about your business and how we can help..." value={formData.message} onChange={handleChange} rows={4} className="text-sm sm:text-base" required />
                 </div>
                 
-                <Button type="submit" className="w-full bg-navy hover:bg-navy/90 text-white">
+                <Button type="submit" className="w-full bg-navy hover:bg-navy/90 text-white py-5 sm:py-6 text-sm sm:text-base">
                   Send Message
                 </Button>
                 
-                <p className="text-sm text-gray-500 text-center">
+                <p className="text-xs sm:text-sm text-gray-500 text-center">
                   We'll get back to you within 24-48 hours during business days
                 </p>
               </form>
@@ -151,8 +151,8 @@ const ContactSection = () => {
         
       </div>
       
-      <footer className="mt-16 py-6 bg-navy text-white text-center">
-        <p>© {new Date().getFullYear()} Shilling Strategy Consulting. All rights reserved.</p>
+      <footer className="mt-12 sm:mt-16 py-4 sm:py-6 bg-navy text-white text-center">
+        <p className="text-xs sm:text-sm px-4">© {new Date().getFullYear()} Shilling Strategy Consulting. All rights reserved.</p>
       </footer>
     </section>;
 };

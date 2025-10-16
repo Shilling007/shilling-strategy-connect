@@ -1,30 +1,30 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const HeroSection = () => {
-  return <section className="relative min-h-screen flex items-center pt-16 bg-gradient-to-br from-white to-lightblue">
+  return <section className="relative min-h-screen flex items-center pt-20 md:pt-16 bg-gradient-to-br from-white to-lightblue">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3')] bg-cover bg-center opacity-5"></div>
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
               <span className="gradient-text">Shilling Strategy Consulting</span>
               <br />
-              <span className="text-3xl md:text-4xl font-semibold text-navy">Stand for the Growth</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-semibold text-navy mt-2 block">Stand for the Growth</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Empowering startups and small businesses with strategic consulting, branding solutions, and growth-focused marketing services.</p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-6 md:mb-8 max-w-3xl mx-auto px-4">Empowering startups and small businesses with strategic consulting, branding solutions, and growth-focused marketing services.</p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="bg-navy hover:bg-navy/90 text-white px-8 py-6 text-lg font-medium" onClick={() => document.getElementById('contact')?.scrollIntoView({
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4">
+              <Button size="lg" className="bg-navy hover:bg-navy/90 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-medium w-full sm:w-auto" onClick={() => document.getElementById('contact')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Book a Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
+                Book Free Consultation <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
               
-              <Button variant="outline" size="lg" className="border-navy text-navy hover:bg-navy/5 px-8 py-6 text-lg font-medium" onClick={() => document.getElementById('services')?.scrollIntoView({
+              <Button variant="outline" size="lg" className="border-navy text-navy hover:bg-navy/5 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-medium w-full sm:w-auto" onClick={() => document.getElementById('services')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Explore Our Services
+                Explore Services
               </Button>
             </div>
           </div>
