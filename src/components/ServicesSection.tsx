@@ -77,15 +77,15 @@ const ServicesSection = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          <Tabs defaultValue="consulting" className="w-full">
+          <Tabs defaultValue="marketing" className="w-full">
             <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto mb-6 sm:mb-8">
-              <TabsTrigger value="consulting" className="text-xs sm:text-sm md:text-base py-2 sm:py-3">Business Consulting</TabsTrigger>
               <TabsTrigger value="marketing" className="text-xs sm:text-sm md:text-base py-2 sm:py-3">Marketing & Branding</TabsTrigger>
+              <TabsTrigger value="consulting" className="text-xs sm:text-sm md:text-base py-2 sm:py-3">Business Consulting</TabsTrigger>
             </TabsList>
             
-            <TabsContent value="consulting" className="animate-fade-up">
+            <TabsContent value="marketing" className="animate-fade-up">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {consultingServices.map((service, index) => (
+                {marketingServices.map((service, index) => (
                   <Card key={index} className="border border-gray-200 hover:border-navy/30 transition-all hover:shadow-md">
                     <CardHeader className="pb-2 p-4 sm:p-6">
                       <CardTitle className="text-navy text-base sm:text-lg md:text-xl">{service.title}</CardTitle>
@@ -98,9 +98,9 @@ const ServicesSection = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="marketing" className="animate-fade-up">
+            <TabsContent value="consulting" className="animate-fade-up">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {marketingServices.map((service, index) => (
+                {consultingServices.map((service, index) => (
                   <Card key={index} className="border border-gray-200 hover:border-navy/30 transition-all hover:shadow-md">
                     <CardHeader className="pb-2 p-4 sm:p-6">
                       <CardTitle className="text-navy text-base sm:text-lg md:text-xl">{service.title}</CardTitle>
