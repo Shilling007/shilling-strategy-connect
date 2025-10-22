@@ -50,9 +50,8 @@ const offers = [
 
 const OffersSection = () => {
   const handleBookService = (packageName: string) => {
-    // You can replace this with actual logic or link to WhatsApp/form
-    const message = `I'm interested in booking the ${packageName} package. Please provide more details.`;
-    const whatsappLink = `https://wa.me/+919XXXXXXXXX?text=${encodeURIComponent(message)}`;
+    const message = `Hi, I'm interested in booking the ${packageName} package. Please provide more details.`;
+    const whatsappLink = `https://wa.me/919168636616?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
   };
 

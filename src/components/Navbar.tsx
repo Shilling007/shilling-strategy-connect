@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center">
               <img 
-                src="/lovable-uploads/ba777cb2-8a91-47ec-b3a1-3d1e3d1889d3.png" 
+                src="/lovable-uploads/ssc-logo.png" 
                 alt="Shilling Strategy Consulting Logo" 
                 className="h-12 md:h-15 w-auto object-contain max-w-[180px] md:max-w-[240px]"
               />
