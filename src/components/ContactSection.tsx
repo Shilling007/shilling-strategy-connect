@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 const services = ["Business Consulting", "Marketing & Branding", "Company Registration", "MSME & GST Registration", "Website Development", "Logo & Brand Identity", "Custom Package", "Not Sure Yet"];
 const ContactSection = () => {
   const {
