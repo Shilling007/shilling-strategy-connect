@@ -167,8 +167,8 @@ const ContactSection = () => {
                   <Textarea id="message" name="message" placeholder="Tell us about your business and how we can help..." value={formData.message} onChange={handleChange} rows={4} className="text-sm sm:text-base" required />
                 </div>
                 
-                <Button type="submit" className="w-full bg-navy hover:bg-navy/90 text-white py-5 sm:py-6 text-sm sm:text-base">
-                  Send Message
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-navy hover:bg-navy/90 text-white py-5 sm:py-6 text-sm sm:text-base">
+                  {isSubmitting ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Sending...</> : "Send Message"}
                 </Button>
                 
                 <p className="text-xs sm:text-sm text-gray-500 text-center">
