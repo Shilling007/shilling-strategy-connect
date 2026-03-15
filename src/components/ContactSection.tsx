@@ -8,9 +8,8 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 const services = ["Business Consulting", "Marketing & Branding", "Company Registration", "MSME & GST Registration", "Website Development", "Logo & Brand Identity", "Custom Package", "Not Sure Yet"];
 const ContactSection = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
