@@ -26,23 +26,54 @@ const ContactSection = () => {
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real scenario, you would send this data to your backend or email service
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24-48 hours.",
-      duration: 5000
-    });
+    setIsSubmitting(true);
+    
+    try {
+      // Save to database
+      const { error } = await supabase
+        .from("contact_messages")
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          service: formData.service,
+          message: formData.message,
+        });
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      service: "Not Sure Yet",
-      message: ""
-    });
+      if (error) throw error;
+
+      // Send WhatsApp notification to owner
+      const whatsappMessage = `📩 New Contact Form Submission!\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n🔧 Service: ${formData.service}\n💬 Message: ${formData.message}`;
+      const whatsappUrl = `https://wa.me/919003748116?text=${encodeURIComponent(whatsappMessage)}`;
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24-48 hours.",
+        duration: 5000,
+      });
+
+      // Open WhatsApp notification in new tab (for the submitter to send)
+      window.open(whatsappUrl, '_blank');
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        service: "Not Sure Yet",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly via WhatsApp.",
+        variant: "destructive",
+        duration: 5000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return <section id="contact" className="section-padding bg-white">
       <div className="container mx-auto px-4 sm:px-6">
